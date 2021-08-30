@@ -1,0 +1,220 @@
+/*  Fichier CSS : le Globule */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+	font-family: verdana, sans-serif;
+    font-size: 0.9em;
+    background: linear-gradient(#000, #ccc, #fff);
+}
+
+#wrapper {
+    width: 1180px;
+    border-radius: 12px;
+    margin: 0 auto;
+    padding: 0 40px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #888;
+}
+
+p {
+    margin: 25px 0;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+img {width: 100%;}
+
+/***************** header *********/
+
+header h1 {
+    color: #139c19;
+    text-shadow: -3px 3px 1px #000;
+    font-size: 70px;
+    text-align: center;
+    padding: 20px;
+}
+
+/***************** navigation *********/
+
+/* Menu principal */
+
+#main-nav {
+    border-radius: 50px;
+    background: linear-gradient(#444, #111);
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px #9c9c9c;
+}
+
+#main-nav .item {
+    display: table-cell;
+    position: relative;
+}
+
+.item > a {
+    display: block;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.item > a:hover {
+    color: #fafafa;
+    background: linear-gradient(#19b123, #139c19);
+    border-radius: initial;
+    text-shadow: -1px 2px 1px #000;
+}
+
+/* Bordure arrondis pOur le lien "Accueil" */
+.item:first-child > a:hover {
+    border-radius: 50px 0 0 50px;
+}
+
+/*** Menu : Panneau ***/
+
+.panneau {
+    background: linear-gradient(#444, #111);
+    display: none;
+    width: 550px;
+    position: absolute;
+	left: -10px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.panneau h3 {
+    color: #000;
+}
+
+.container-panneau {
+    background: linear-gradient(#19b123, #139c19);
+    display: table;
+}
+
+.container-panneau a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.container-panneau img {
+    display: block;
+/*    vertical-align: bottom;*/
+}
+
+#main-nav li:hover .panneau {
+    display: block; /* apparition panneau */
+    width: 550px;
+}
+
+/*** Sous-menu ***/
+
+.sous-menu {
+    width: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sous-menu a:hover {
+    color: #ededed;
+    text-shadow: -1px 2px 1px #000;
+}
+
+/***************** main *********/
+
+main, .column-left, .column-right {
+    display: table-cell;
+}
+
+.column-left {
+    width: 70%;
+    padding: 40px 40px 0 0;
+/*    margin-right: 40px;*/
+}
+
+.column-left h2 {
+    background: linear-gradient(to left, #fff, #fff 98%, #139c19 70%);
+    color: #139c19;
+    border-radius: 15px;
+    padding-left: 25px;
+    margin: 20px 0;
+}
+
+#intro {
+    font-style: italic;
+    color: #777;
+}
+
+/* Gluons de globule */
+
+#gluon {
+    position: relative;
+    margin-top: 20px;
+}
+
+#gluon figure {
+    float: left;
+    margin: 0 25px 20px -40px;
+    text-align: right;
+    color: grey;
+}
+
+#gluon img {
+    box-shadow: -3px 4px 14px #888;
+}
+
+/************** Column-right *********/
+
+.column-right {
+    width: 30%;
+    vertical-align: bottom;
+    box-shadow: -3px 4px 14px #ccc;
+}
+
+.column-right figure h2 {
+    color: #139c19;
+}
+
+.column-right figcaption {
+    padding: 10px;
+    line-height: 1.7em;
+}
+
+/***************** footer *********/
+
+footer {
+    border-top: 1px solid #139c19;
+    text-align: center;
+}
+
+#footer-nav {
+    padding: 40px;
+}
+
+#footer-nav li {
+    display: inline-block;
+}
+
+#footer-nav a {
+    background: linear-gradient(#19b123, #139c19);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#footer-nav a:hover {
+    background: rgba(21, 165, 29, 0.5);
+    color: #000;
+}
